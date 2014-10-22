@@ -1,8 +1,8 @@
-This directory contains various tests for the basic application.
+This directory contains various tests for the simple application.
 
 Tests in `codeception` directory are developed with [Codeception PHP Testing Framework](http://codeception.com/).
 
-After creating the basic application, follow these steps to prepare for the tests:
+After creating the simple application, follow these steps to prepare for the tests:
 
 1. Install Codeception if it's not yet installed:
 
@@ -21,10 +21,10 @@ Changed current directory to <directory>
 Then add `<directory>/vendor/bin` to you `PATH` environment variable. Now we're able to use `codecept` from command
 line globally.
 
-2. Install faker extension by running the following from template root directory where `composer.json` is:
+2. Go to tests folder
 
 ```
-composer require --dev yiisoft/yii2-faker:*
+cd protected/tests
 ```
 
 3. Create `yii2_basic_tests` database and update it by applying migrations:
@@ -40,11 +40,13 @@ codecept build
 ```
 
 5. In order to be able to run acceptance tests you need to start a webserver. The simplest way is to use PHP built in
-webserver. In the `web` directory execute the following:
+webserver. In the application directory execute the following:
 
 ```
 php -S localhost:8080
 ```
+
+or edit your virtual host in protected/tests/codeception/acceptance.suite.yml
 
 6. Now you can run the tests with the following commands:
 
