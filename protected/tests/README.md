@@ -21,34 +21,29 @@ Changed current directory to <directory>
 Then add `<directory>/vendor/bin` to you `PATH` environment variable. Now we're able to use `codecept` from command
 line globally.
 
-2. Go to tests folder
+2. Create `yii2_basic_tests` database and update it by applying migrations:
+
+```
+protected/tests/codeception/bin/yii migrate
+```
+
+3. Build the test suites:
 
 ```
 cd protected/tests
-```
-
-3. Create `yii2_basic_tests` database and update it by applying migrations:
-
-```
-codeception/bin/yii migrate
-```
-
-4. Build the test suites:
-
-```
 codecept build
 ```
 
-5. In order to be able to run acceptance tests you need to start a webserver. The simplest way is to use PHP built in
+4. In order to be able to run acceptance tests you need to start a webserver. The simplest way is to use PHP built in
 webserver. In the application directory execute the following:
 
 ```
 php -S localhost:8080
 ```
 
-or edit your virtual host in protected/tests/codeception/acceptance.suite.yml
+or edit `protected/tests/codeception/acceptance.suite.yml` and add your virtual host there.
 
-6. Now you can run the tests with the following commands:
+5. Now you can run the tests with the following commands:
 
 ```
 # run all available tests

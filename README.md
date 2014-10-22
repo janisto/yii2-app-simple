@@ -1,7 +1,13 @@
-yii2-app-simple
+Yii 2 Simple Application Template
 ===============
 
-Yii 2 Simple Application Template.
+Yii 2 Simple Application Template is a skeleton Yii 2 application best for
+rapidly creating multiple simple projects in subfolders.
+
+Documentation
+------------
+
+See `docs/README.md` and `protected/tests/README.md`.
 
 License
 -------
