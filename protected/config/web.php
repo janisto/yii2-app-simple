@@ -1,5 +1,7 @@
 <?php
 
+Yii::setAlias('@uploads', dirname(__DIR__) . '/../uploads');
+
 $params = require(__DIR__ . '/params.php');
 
 $config = [
