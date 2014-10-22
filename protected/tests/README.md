@@ -40,7 +40,7 @@ webserver. In the application directory execute the following:
     ```
     php -S localhost:8080
     ```
-    
+
     or edit `protected/tests/codeception/acceptance.suite.yml` and add your virtual host there.
 
 5. Now you can run the tests with the following commands:
