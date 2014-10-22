@@ -8,7 +8,7 @@ defined('STDOUT') or define('STDOUT', fopen('php://stdout', 'w'));
 
 defined('YII_APP_BASE_PATH') or define('YII_APP_BASE_PATH', dirname(dirname(dirname(__DIR__))));
 
-require(YII_APP_BASE_PATH . '/vendor/autoload.php');
-require(YII_APP_BASE_PATH . '/vendor/yiisoft/yii2/Yii.php');
+require(YII_APP_BASE_PATH . '/../vendor/autoload.php');
+require(YII_APP_BASE_PATH . '/../vendor/yiisoft/yii2/Yii.php');
 
 Yii::setAlias('@tests', dirname(dirname(__DIR__)));
